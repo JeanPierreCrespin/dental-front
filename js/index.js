@@ -52,7 +52,7 @@ fetch(url, options)
           console.log(response.jwt);
           localStorage.setItem('jwt', response.jwt );
           //location.replace('home.html');
-          window.location.href = "/home.html";
+          window.location.href = "/dental-front/home.html";
       } else {
           alert('Usuario no encontrado, debe registrarse '+ response);
 
