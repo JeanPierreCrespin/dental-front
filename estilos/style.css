@@ -1,0 +1,921 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+h1 {
+    color:#480376;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+.logo-container {
+    position: fixed;
+    display: flex;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+    padding: 20px;
+    align-items: center;
+    color: #480376;
+}
+
+.logo-container i {
+    width: 30px;
+    margin:15px;
+    height: 20px;
+    font-size: 25px;
+    color: #480376;
+}
+
+.logo-container p {
+    font-size: 23px;
+}
+
+
+#inicio {
+    position: relative;
+    background-image: url(..//img/1.png);
+    background-size: cover;
+    background-repeat: round;
+}
+  
+#ingreso {
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:  center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+
+
+#ingreso form{
+    width: 470px;
+    margin-top: 50px;
+}
+
+
+form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+    align-items: center ;
+}
+
+form .title {
+
+    color: #252525;
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label .fa-solid {
+    font-size:  20px;
+    color: #160809;
+    margin-right: 20px;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #ce1d61;
+    padding: 0 5px;
+    font-size: 20px;
+    height: 40px;
+}
+
+form label input ::placeholder {
+    color: #C25561;
+  
+}
+
+form .link {
+    color: #242424;
+    margin-bottom: 25px;
+}
+
+#icono{
+    color: #240456;
+}
+
+button {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb23c0, #ce1d61);
+    padding: 15px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 25px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+button:hover{
+    color:#0014ca
+}
+
+#redes {
+    padding: 20px;
+    width: 40vh;
+    display: flex;
+    justify-content: space-around;  
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#redes a{
+    color:#75056b;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+#nuevousuario {
+    display:  flex;
+    flex-direction: column;
+    align-items:  center;
+    background-image: url(../img/1.png);
+    background-size: cover;
+    background-repeat: round;
+    min-height: 100vh;
+    justify-content: space-between;
+}
+
+
+#nuevousuario form {
+    width: 300px;
+    margin-top: 100px;
+}
+
+#nuevousuario input {
+    margin-top: 10px;
+}
+
+#nuevousuario h3 {
+    font-size: 25px;
+}
+
+
+
+#button2 {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #4a42b8);
+    padding: 15px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px;
+    height: 50px;
+    width: 170px;
+}
+
+#button3 {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb23c0, #ce1d61);
+    padding: 15px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 25px;
+    height: 50px;
+    width: 170px;
+    
+}
+
+#button2:hover{
+    color:#3514dc;
+}
+
+#button3:hover{
+    color:#3514dc;
+}
+
+
+.regresar{
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color:  #480376;
+    text-align: center;
+    width: 170px;
+    text-decoration: none;
+}
+
+.regresar i {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.regresar :hover{
+    color:  #020073;
+
+}
+
+#toggleCheckboxRol {
+    display: none; /* Oculta el checkbox por defecto */
+  }
+  
+  .toggle-labelRol {
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #toggleCheckboxPacientes {
+    display: none; /* Oculta el checkbox por defecto */
+  }
+  
+  .toggle-labelPacientes {
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #toggleCheckboxOdontologos {
+    display: none; /* Oculta el checkbox por defecto */
+  }
+  
+  .toggle-labelOdontologos {
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #toggleCheckboxFecha {
+    display: none; /* Oculta el checkbox por defecto */
+  }
+  
+  .toggle-labelFecha {
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #roles {
+    display: none; /* Oculta las opciones por defecto */
+    padding: 5px 10px;
+    background-color: #c717df;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+  }
+
+  
+  #roles option{
+    padding: 10px;
+    list-style: none;
+    border: 1px solid #a40808;
+    }
+
+  #roles li {
+    cursor: pointer;
+    margin-bottom: 5px; /* Espacio entre las opciones */
+  }
+  
+  #listadopacientes {
+    display: none; /* Oculta las opciones por defecto */
+    padding: 5px 10px;
+    background-color: #eeb3f6;
+    width: 140px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+  }
+
+  #selectP{
+    font-size: 20px;
+    color:#480376;
+    font-style: bold;
+    background-color: #bdc1e7;
+    border-radius: 25px;
+  }
+
+  #selectO{
+    font-size: 20px;
+    color:#480376;
+    font-style: bold;
+    background-color: #bdc1e7;
+    border-radius: 25px;
+  }
+  
+
+  #listadoOdontologos {
+    display: none; /* Oculta las opciones por defecto */
+    padding: 5px 10px;
+    background-color: #eeb3f6;
+    width: 140px;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    color:#0014ca;
+  }
+
+
+
+    #fechasDisponibles {
+        display: none; /* Oculta las opciones por defecto */
+        padding: 5px 10px;
+        background-color: #da83f5;
+        border: 1px solid #ccc;
+        border-radius: 0 0 5px 5px;
+        text-align: center;
+      }
+    
+      
+
+
+    #fechasDisponibles option {
+            padding: 10px;
+            list-style: none;
+            text-align: center;
+            
+    }
+
+    #fecha {
+        width: 120px;
+        color:#ca00a5;
+        text-align: center;
+    }
+    
+    #hora {
+        width: 120px;
+        color:#ca00a5;
+        text-align: center;
+    }
+    #toggleCheckboxRol:checked ~ #roles {
+        display: block; /* Muestra las opciones cuando el checkbox está marcado */
+      }
+
+      
+  #toggleCheckboxPacientes:checked ~ #listadopacientes {
+    display: block; /* Muestra las opciones cuando el checkbox está marcado */
+  }
+
+  #toggleCheckboxOdontologos:checked ~ #listadoOdontologos {
+    display: block; /* Muestra las opciones cuando el checkbox está marcado */
+  }
+
+  #toggleCheckboxFecha:checked ~ #fechasDisponibles {
+    display: block; /* Muestra las opciones cuando el checkbox está marcado */
+  }
+
+  #guardar{
+    border-radius: 25px;
+  }
+  
+ #divroles{
+    background-color: #b77fb1;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: solid;
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: bold;
+ }
+
+#home {
+    display:  flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../img/2.png);
+    background-size: cover;
+    background-repeat: round;
+}
+
+
+#homecontenedor{
+    height: 40vh;
+    width: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#turno{
+    display:  flex;
+    align-items:  center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#a6a8d1;
+    flex-direction:column;
+    background-repeat: round;
+}
+
+/* Botones HOME */
+
+#buttonturno {
+    width: 170px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+#buttonodontologo {
+    width: 170px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+#buttonpaciente {
+    width: 170px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+#buttonturno i{
+    margin-bottom: 40px;
+    color: #43047b;
+    font-size: 40px;
+}
+
+#buttonodontologo i{
+    margin-bottom: 40px;
+    color: #43047b;
+    font-size: 40px;
+}
+
+#buttonpaciente i{
+    margin-bottom: 40px;
+    color: #43047b;
+    font-size: 40px;
+}
+
+#turnoscontenedor{
+    background: #514a81;
+    height: 50vh;
+    width: 140vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 10px;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#botonesturnos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    font-size: 15px;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background: #956eba;
+    border-radius: 35px;
+    margin: 40px
+}
+
+#botonconfirmar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+
+#turno table {
+    margin:80px;
+    width: 800px;
+    height: 100px;
+    background-color: #b981e9;
+    text-align: center;
+
+
+}
+
+#turno i{
+    color:#43047b;
+}
+
+#turno button.eliminar{
+    background: none;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+}
+
+#turno button.editar{
+    background: none;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#turno i:hover{
+    color: #fff;
+}
+
+#botonesturnos select{
+    width: 120px;
+}
+
+#turno tr:hover {
+    background: #d279de;
+}
+
+#turno table.tr{
+    background: ;
+}
+
+#okturno {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #7068e0, #ce1dc8);
+    padding: 15px 15px;
+    margin-top: 35px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 25px;
+    height: 50px;
+    width: 170px;
+}
+
+#okturno:hover{
+    color:#0014ca;
+}
+
+
+#odontologo{
+    display:  flex;
+    align-items:  center;
+    width: 100%;
+    justify-content: center;
+    min-height: 120vh;
+    background-color: #a6a8d1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#paciente{
+    display:  flex;
+    align-items:  center;
+    justify-content: center;
+    min-height: 120vh;
+    background-color: #a6a8d1;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#paciente form {
+    width: 350px;
+    height: 400px;
+    background-color: #555185;
+}
+
+#paciente form label {
+    color:#fff;
+}
+
+#paciente form input{
+    border-radius: 40px;
+    text-align: center;
+}
+
+#box2{
+    background: #726f6f;
+    height: 70vh;
+    width: 150vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#box2 button {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #cb232c, #291dce);
+    padding: 15px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+/* Dandole estilos a la tabla */
+
+#tablaContenedor{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+table {
+    font-size: 15px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+thead {
+    background-color: #555185;
+}
+
+th {
+    text-transform: uppercase;
+    color:#fff;
+    padding: 10px
+}
+
+
+#tBody {
+    background-color: #959df1;
+}
+
+#tBody button.eliminar {
+    background: none;
+    font-size: 20px;
+    height: 20px;
+    width:  25px;
+}
+
+#tBody button.editar {
+    margin: 5px;
+    background: none;
+    font-size: 20px;
+    height: 20px;
+    width: 25px;
+    margin-bottom: 20px;
+}
+
+#tBody i{
+    color: #480376;
+}
+
+#tBody i:hover{
+    color: #fbfbfb;
+}
+
+#tBody tr:hover {
+    background: #d279de;
+}
+
+#tBody tr {
+    cursor: pointer;
+    align-items: center;
+}
+
+#tBody td {
+    color:#0b0101;
+}
+
+/* ACA EMPIEZA EL FORM ODONTOLOGO*/
+
+#odontologo form {
+    width: 350px;
+    height: 420px;
+    background-color: #555185;
+}
+
+#odontologo form label {
+    color:#fff;
+}
+
+#odontologo form input{
+    border-radius: 40px;
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+    margin: 2px;
+    width: 300px;
+}
+
+
+#tablaContenedor button{
+    text-align: center;
+    text-align: center;
+    
+}
+
+#bodyTabla {
+    margin-top: 40px;
+}
+
+#odontologo table {
+    width: 400px;
+    height: 500px;
+}
+
+.visible {
+    display: block !important;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+
+/*  RESPONSIVEEEEEEEE */
+@media screen and (min-width: 401px) and (max-width: 1400px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        width: 100%;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #nuevousuario, #inicio, #home, #turno, #odontologo, #paciente{
+        background: #8b9198;
+    }
+
+    form .title {
+        font-size: 25px;
+    }
+
+    .logo-container{
+        margin-bottom: 40px;
+    }
+
+    .logo-container p{
+        margin-top: 15px;
+    }
+
+    #ingreso form{
+        width: 320px;
+        margin-top: 100px;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+
+    .regresar {
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .regresar i {
+        padding: 50px;
+        padding-bottom: 20px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #button{
+        width: 130px;
+        height: 40px;
+    }
+
+    #button2{
+        width: 120px;
+    }
+
+    #redes a {
+        font-size: 15px;
+    }
+
+
+    #nuevousuario form{
+        width: 250px;
+    }
+
+    #nuevousuario h3 {
+        font-size: 20px;
+    }
+
+    #homecontenedor {
+        display: flex;
+        flex-direction: column;
+        width: 40vh;
+        height: 70vh;
+    }
+
+    #turnoscontenedor{
+        width: 80vh;
+
+
+    }
+
+    #box1{
+        display: flex;
+        height: 110vh;
+        width: 40vh;
+        flex-direction: column;
+        margin: 30px;
+
+    }
+
+    #box1 button {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    #accionescont{
+        margin-bottom: 20px;
+    }
+
+    #newodontologo{
+        width: 25vh;
+        margin-top: 30px;
+    }
+
+    #newodontologo h3 {
+        font-size: 15px;
+    }
+
+
+    #tabla{
+        margin-top: 30px;
+        width: 320px;
+        font-size: 10px;
+}
+
+#paciente {
+    height: 140vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#box2{
+    margin-top: none;
+    display: flex;
+    height: 110vh;
+    width: 45vh;
+    flex-direction: column;
+}
+
+#box2 button {
+    
+font-size: 15px;
+padding: 5px;
+    
+}
+
+#newpaciente{
+    width: 25vh;
+    margin-top: 30px;
+}
+
+
+#newpaciente h3 {
+    font-size: 15px;
+}
+
+#turnos{
+    width: 100%;
+
+}
+
+.logo-container{
+    display: none;
+}
+
+#botonesturnos{
+    width: 25vh;
+}
+
+
+
+}
+
